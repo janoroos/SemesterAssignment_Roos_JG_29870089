@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>434</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simplex Method</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>434</width>
+      <height>253</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Number of constraints:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Enter number of constraints:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="SB_C">
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+</string>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="Enter_C">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Enter Constraints</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QPushButton" name="Enter">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Enter</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Number of variables:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="Variables">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="Constraints">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);
+border-color: rgb(0, 0, 0);
+font: 75 11pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Enter  number of Variables</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QPushButton" name="Max">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Maximize</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QPushButton" name="Min">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Minimize</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="Enter_OF">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Enter Objective Function</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="SB_V">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <widget class="QPushButton" name="DisplayButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Display</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Answers</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="Display">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>250</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Display2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>319</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>434</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
